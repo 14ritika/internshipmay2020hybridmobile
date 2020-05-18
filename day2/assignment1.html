@@ -1,0 +1,30 @@
+<script>
+    function product(){
+        var num1=document.getElementById("num1");
+        var num2=document.getElementById("num2");
+        if(num1.value==" " || num2.value==""){
+            alert("sry! invalid data");
+        }
+        else{
+            var n=parseInt(num1.value);
+            var m=parseInt(num2.value);
+            var p=1;
+            p = n*m;
+            alert("product of "+n+" and "+m+" is "+p);
+            }
+        }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    number1<input type="number" id="num1" size="20"><br>
+    number2<input type="number" id="num2" size="20"><br>
+    <input type="button" value="Product" onclick="product()">
+</body>
+</html>
+
