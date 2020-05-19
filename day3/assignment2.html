@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#cube").click(function(){
+         var n=parseInt($("#num").val());
+         var c;
+         c=n*n*n;
+        $("#result").val(c);
+        });
+
+       $("#square").click(function(){
+         var n=parseInt($("#num").val());
+         var s;
+         s=n*n;
+        $("#result").val(s);
+        });
+    });
+
+    </script>
+
+</head>
+<body>
+
+    Number <input type="text" id="num" size="30"><br>
+    Result <input type="text" id="result" size="25"><br>
+    <input type="button" value="SQUARE" id="square">
+    <input type="button" value="CUBE" id="cube">
+</body>
+</html>
